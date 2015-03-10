@@ -1,0 +1,5 @@
+git clone url  > MOVERTE AL DIRECTORIO
+git add nombre
+git commit -m " "
+git push
+

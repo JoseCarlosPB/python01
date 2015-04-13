@@ -7,10 +7,10 @@ from flask.ext.googlemaps import Map
 app = Flask(__name__)
 GoogleMaps(app)
 
-CONSUMER_KEY = 'W1MLNTl9NG0WTDYxzwsnu6vY8'
-CONSUMER_SECRET = 'cLI16odQnEiFQowFLrd49hLJxpuHLiEc7LJE2P3cln56NGqgc0'
-OAUTH_TOKEN = '406594742-bnsr9bIfThPRpyia1GsIQBQ2e4AxAjQf6uAEfBrc'
-OAUTH_TOKEN_SECRET = 'B8OBY9ZT8li1NKhskOyr4xufWgcvnF0UffZ4OnCw7XJF6'
+CONSUMER_KEY = ''
+CONSUMER_SECRET = ''
+OAUTH_TOKEN = ''
+OAUTH_TOKEN_SECRET = ''
 
 auth = twitter.oauth.OAuth(OAUTH_TOKEN, OAUTH_TOKEN_SECRET,
                            CONSUMER_KEY, CONSUMER_SECRET)

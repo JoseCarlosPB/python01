@@ -5,7 +5,7 @@
     <link href='https://fonts.googleapis.com/css?family=RobotoDraft:400,500,700,400italic' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="http://josecarlosaragon.hol.es/estilos.css" rel='stylesheet' type='text/css'>
     
-    <title>Valores ncesarios Tumblr a Drive</title>
+    <title>Programa uso APIs</title>
 </head>
 <body>
     <header class="qp-ui" data-qp-ui="{
@@ -22,22 +22,20 @@
       'default': 82
     }
   }">
-    <div class="header-title">      <span class="section-title">Valores necesarios Tumblr a Drive</span>
-      <span class="chapter-title">Búsqueda</span>
+    <div class="header-title">      <span class="section-title">Practica API</span>
+      <span class="chapter-title">Listado de ficheros</span>
     </div>
   </div>
 </header>
-
-		
-		    <form action="/tumblr2drive" method="POST">
-		   	Usuario de Tumblr: <input type="text" name="user">
-			Post de inicio: <input type="text" name="offset">
-			Peticiones: <input type="text" name="peticiones">
-			URL carpeta destino PC: <input type="text" name="destino">
-			nombre imagenes: <input type="text" name="nombrefoto">
-			<input type="submit" name="my-form" class="button buttonBlue" value="mandar valores">
-		    </form>
-
+    <br>
+    <h1>Listado de ficheros</h1><br>
+    {%for file in files%}
+        <p> {{ file }}</p>
+    {% endfor %}
+    <p><h2>Introduzca el nombre del fichero que desea subir a google drive</h2></p>
+    <form action="/subirDrive" method="POST">
+        <input type="text" id="fichero" name="fichero">
+        <input type="submit" value="Subir">
+    </form>
 
 </body>
-
